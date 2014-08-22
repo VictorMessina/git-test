@@ -2,10 +2,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> exercicio 4.1</title>
+        <title> exercicio 4.1 e 4.2</title>
+        <style type="text/css">
+	.estilo1{
+	background-color:gray;
+	}
+        </style>
     </head>
     <body>
-        <?php
+<?php
 $P1=9;
 $M1=8;       
 $M2=7;
@@ -44,5 +49,26 @@ else {
 }
         
         ?>
+        
+        <?php 
+
+echo "<table width='0' border='1'> 
+   <tr>
+    <td><b>ID</td>   
+    <td><b>NOME</td> 
+    <td><b>DESC</td>
+  </tr>";
+                    
+  for($i = 1; $i<7; $i = $i + 1){ 
+    echo "
+     <tr> 
+       <td>id</td>   
+       <td>nome</td> 
+       <td>desc</td> 
+    </tr> 
+      "; 
+    }
+    
+   ?>
     </body>
 </html>
